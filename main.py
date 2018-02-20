@@ -50,7 +50,7 @@ async def on_message(message):
     if message.content.startswith('!frase'):
 
         # Cargamos el archivo JSON en memoria
-        with open('frases.json', encoding='latin-1') as frases:
+        with open('frases.json', encoding='utf-8') as frases:
 
             # Creamos un objeto JSON en base al archivo frases.json
             data = json.load(frases)
